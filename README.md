@@ -36,8 +36,8 @@ A machine learning project that predicts survival outcomes of passengers on the 
 
 ## 🧹 Data Preprocessing
 
-- **Missing Values:** Imputed `Age` with median, `Embarked` with mode, dropped `Cabin` due to high null percentage  
-- **Categorical Encoding:** Label encoding for `Sex`, one-hot encoding for `Embarked` and `Pclass`  
+- **Missing Values:** Imputed `Age` with median, `Embarked` with mode, dropped `Cabin`,`PassengerId`, `Name`, `Ticket` as a part of removing irrelevant or unnecessary data to improve model efficiency and reduce noise. 
+- **Categorical Encoding:** Label encoding for `Sex`and `Embarked`   
 - **Outlier Detection:** Used boxplots to identify outliers in `Fare` and `Age`, treated extreme values  
 - **Feature Scaling:** StandardScaler used on `Age` and `Fare`  
 - **Class Balancing:** Applied SMOTE to handle imbalance in `Survived` classes
@@ -82,8 +82,11 @@ The techniques used in this project simulate real-world classification tasks suc
 ## 📁 Project Structure
 
 ├── data/ # Dataset (Titanic-Dataset.csv)
+
 ├── notebooks/ # Jupyter notebooks for EDA & modeling
+
 ├── titanic.ipynb # Main script for model training
+
 ├── README.md # Titanic Project documentation
 
 -------------------------------------------------------------------------------------------------------------------------------------
