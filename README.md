@@ -6,7 +6,7 @@ A machine learning project that predicts survival outcomes of passengers on the 
 
 ## 📊 Dataset Overview
 
-- **Source:** [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data)
+- **Source:** [Kaggle Titanic Dataset]([https://www.kaggle.com/datasets/yasserh/titanic-dataset/data]))
 - **Rows:** 891 passengers  
 - **Columns:** 12 features including demographics, ticket details, and survival outcome  
 - **Target Variable:** `Survived` (0 = No, 1 = Yes)
