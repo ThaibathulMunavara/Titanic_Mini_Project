@@ -201,4 +201,4 @@ Prediction for new passenger: Did not survive
 ##  ✨Author
 Thaibathul Munavara NR
 📧 thaibathulmunavara@gmail.com
-🔗 [LinkedIn](#[(https://www.linkedin.com/in/thaibathulmunavara)])| [GitHub](#[https://github.com/ThaibathulMunavara)])
+🔗 [LinkedIn](https://www.linkedin.com/in/thaibathulmunavara)| [GitHub](https://github.com/ThaibathulMunavara)
