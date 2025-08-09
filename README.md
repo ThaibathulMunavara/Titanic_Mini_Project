@@ -53,6 +53,8 @@ The analysis focuses on:
 - Balance the dataset using **SMOTE**
 - Scale features for model optimization
 - Build and evaluate a classification model
+- Feature Engineering
+- Model Training & Evaluation
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
