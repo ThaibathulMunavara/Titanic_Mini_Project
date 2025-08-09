@@ -1,14 +1,34 @@
 # Titanic Survival Prediction 🚢
 
-A machine learning project that predicts survival outcomes of passengers on the Titanic using various classification techniques. This project demonstrates the full lifecycle of a data science pipeline — from data cleaning and exploratory analysis to model training and evaluation.
+A machine learning project that predicts survival outcomes of passengers on the Titanic using various classification techniques. This project demonstrates the full lifecycle of a data science pipeline — from data cleaning and exploratory analysis to model training, hyperparameter tuning and and evaluation.
+The analysis focuses on:
+- Exploring **patterns** in passenger demographics and travel details
+- Detecting **anomalies and outliers**
+- Identifying **key features** that influence survival
+- Building and evaluating **machine learning models** to predict survival
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
 ## 📊 Dataset Overview
 
-- **Source:** [Kaggle Titanic Dataset]([https://www.kaggle.com/datasets/yasserh/titanic-dataset/data]))
+- **Source:** [Kaggle Titanic Dataset]([https://www.kaggle.com/datasets/yasserh/titanic-dataset/data])
 - **Rows:** 891 passengers  
-- **Columns:** 12 features including demographics, ticket details, and survival outcome  
+- **Columns:** 12 features including demographics, ticket details, and survival outcome
+    | Column Name | Description | Type |
+    --------------------------------------------------------
+    | PassengerId | Unique passenger identifier | Integer |
+    | Survived    | Survival (0 = No, 1 = Yes) | Integer |
+    | Pclass      | Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd) | Integer |
+    | Name        | Passenger name | String |
+    | Sex         | Gender | String |
+    | Age         | Age in years | Float |
+    | SibSp       | # of siblings/spouses aboard | Integer |
+    | Parch       | # of parents/children aboard | Integer |
+    | Ticket      | Ticket number | String |
+    | Fare        | Passenger fare | Float |
+    | Cabin       | Cabin number | String |
+    | Embarked    | Port of embarkation (C = Cherbourg; Q = Queenstown; S = Southampton) | String |
+
 - **Target Variable:** `Survived` (0 = No, 1 = Yes)
 
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -45,7 +65,12 @@ A machine learning project that predicts survival outcomes of passengers on the 
 -----------------------------------------------------------------------------------------------------------------------------------
 
 ## 📈 Exploratory Data Analysis (EDA)
-
+-  Explored:
+      - **Summary statistics** (mean, median, std, etc.)
+      - **Distribution plots** (histograms, boxplots)
+      - **Correlation analysis** (heatmaps, pairplots)
+      - **Outlier detection** (IQR method)
+      - **Categorical analysis** (bar charts for `Sex`, `Pclass`, etc.)
 - Identified key features affecting survival:
   - **Sex**: Males and females have equal probabilities of survival,ensuring that the model was not biased toward gender.
   - **Pclass**: 1st class had higher survival rate
@@ -91,5 +116,83 @@ The techniques used in this project simulate real-world classification tasks suc
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
+## ⚙️ Installation
 
+#Make sure you have **Python 3** and **Jupyter Notebook** installed on your system.
 
+```bash
+# Clone the repository
+git clone https://github.com/ThaibathulMunavara/Titanic.ipynb
+cd Titanic
+
+# Install dependencies
+pip install -r requirements.txt
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## 🚀 How to Run
+
+- After Installation, **Open in Terminal / Command Prompt**
+   --Navigate to the project folder:
+       ```bash
+       cd path/to/project
+       ```
+- **Run the EDA Notebook**
+   - Launch Jupyter Notebook:
+     ```bash
+     jupyter notebook
+     ```
+   - Open `Titanic.ipynb` or `EDA.ipynb`  and run all cells.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+##📈 Input and Output
+
+### 🧪 Predicting on a New Passenger (Example)
+
+You can test the trained model on a custom passenger by creating a DataFrame with the same features as the training data.
+
+```python
+import pandas as pd
+import joblib
+
+# Load the saved model
+model = joblib.load("titanic_model.pkl")
+
+# Create a sample passenger
+new_passenger = pd.DataFrame({
+    'Pclass': [3],     # 3rd class
+    'Sex': [1],        # male (encoded as 1)
+    'Age': [25],       # 25 years old
+    'SibSp': [0],      # no siblings/spouse aboard
+    'Parch': [0],      # no parents/children aboard
+    'Fare': [7.25],    # ticket fare
+    'Embarked': [2]    # embarked from Southampton (encoded as 2)
+})
+
+# Make prediction
+prediction = model.predict(new_passenger)
+
+# Print result
+print("\nPrediction for new passenger:",
+      "Survived" if prediction[0] == 1 else "Did not survive")
+
+### **Prediction Output**
+Prediction for new passenger: Did not survive
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## 📈 Results
+
+- Survival rate varies significantly by gender, class, and age group.
+
+- Strong negative correlation between Pclass and survival.
+
+- Outliers removed in Age and Fare improved model accuracy.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+✨ Author
+Thaibathul Munavara NR
+📧 thaibathulmunavara@gmail.com
+🔗 [LinkedIn]([https://www.linkedin.com/in/thaibathulmunavara]) | [GitHub]([https://github.com/ThaibathulMunavara])
