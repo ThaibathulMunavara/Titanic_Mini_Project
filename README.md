@@ -11,7 +11,7 @@ The analysis focuses on:
 
 ## 📊 Dataset Overview
 
-- **Source:** [Kaggle Titanic Dataset]([https://www.kaggle.com/datasets/yasserh/titanic-dataset/data]))
+- **Source:** [Kaggle Titanic Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset/data)
 - **Rows:** 891 passengers  
 - **Columns:** 12 features including demographics, ticket details, and survival outcome
   
@@ -201,4 +201,4 @@ Prediction for new passenger: Did not survive
 ##  ✨Author
 Thaibathul Munavara NR
 📧 thaibathulmunavara@gmail.com
-🔗 [LinkedIn]([https://www.linkedin.com/in/thaibathulmunavara])) | [GitHub]([https://github.com/ThaibathulMunavara]))
+🔗 [LinkedIn](#[(https://www.linkedin.com/in/thaibathulmunavara)])| [GitHub](#[https://github.com/ThaibathulMunavara)])
