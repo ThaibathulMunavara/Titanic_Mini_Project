@@ -133,11 +133,26 @@ The techniques used in this project simulate real-world classification tasks suc
 # Make sure you have **Python 3** and **Jupyter Notebook** installed on your system.
 ```bash
 # Clone the repository
-git clone https://github.com/ThaibathulMunavara/Titanic.ipynb
-cd Titanic
+  -git clone https://github.com/ThaibathulMunavara/Titanic.ipynb
+  -cd Titanic
 
 # Install dependencies
 pip install -r requirements.txt
 
 --------------------------------------------------------------------------------------------------------------------------------------
+
+## 🚀 **How to run**
+
+- After Installation, **Open in Terminal / Command Prompt**
+   --Navigate to the project folder:
+       ```bash
+       cd path/to/project
+       ```
+- **Run the EDA Notebook**
+   - Launch Jupyter Notebook:
+     ```bash
+     jupyter notebook
+     ```
+   - Open `Titanic.ipynb` or `EDA.ipynb`  and run all cells.
+----------------------------------------------------------------------------------------------------------------------------------------
 
