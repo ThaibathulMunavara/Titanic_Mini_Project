@@ -130,7 +130,7 @@ The techniques used in this project simulate real-world classification tasks suc
 
 ## ⚙️ Installation
 
-#Make sure you have **Python 3** and **Jupyter Notebook** installed on your system.
+# Make sure you have **Python 3** and **Jupyter Notebook** installed on your system.
 
 ```bash
 # Clone the repository
