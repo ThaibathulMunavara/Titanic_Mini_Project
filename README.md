@@ -14,19 +14,31 @@ The analysis focuses on:
 - **Source:** [Kaggle Titanic Dataset]([https://www.kaggle.com/datasets/yasserh/titanic-dataset/data])
 - **Rows:** 891 passengers  
 - **Columns:** 12 features including demographics, ticket details, and survival outcome
+  
     | Column Name | Description | Type |
     --------------------------------------------------------
     | PassengerId | Unique passenger identifier | Integer |
+  
     | Survived    | Survival (0 = No, 1 = Yes) | Integer |
+  
     | Pclass      | Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd) | Integer |
+  
     | Name        | Passenger name | String |
+  
     | Sex         | Gender | String |
+  
     | Age         | Age in years | Float |
+  
     | SibSp       | # of siblings/spouses aboard | Integer |
+  
     | Parch       | # of parents/children aboard | Integer |
+  
     | Ticket      | Ticket number | String |
+  
     | Fare        | Passenger fare | Float |
+  
     | Cabin       | Cabin number | String |
+  
     | Embarked    | Port of embarkation (C = Cherbourg; Q = Queenstown; S = Southampton) | String |
 
 - **Target Variable:** `Survived` (0 = No, 1 = Yes)
@@ -114,7 +126,7 @@ The techniques used in this project simulate real-world classification tasks suc
 
 ├── README.md # Titanic Project documentation
 
--------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 ## ⚙️ Installation
 
@@ -128,9 +140,9 @@ cd Titanic
 # Install dependencies
 pip install -r requirements.txt
 
--------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
-## 🚀 How to Run
+## 🚀 **How to run**
 
 - After Installation, **Open in Terminal / Command Prompt**
    --Navigate to the project folder:
