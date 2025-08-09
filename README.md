@@ -96,7 +96,7 @@ The analysis focuses on:
 ## 🤖 Model Training and Evaluation
 
 - **Algorithm Used:** Random Forest Classifier
-- **Data Split:** Train-test split using scikit-learn (typically 80/20 or 70/30)
+- **Data Split:** Train-test split using scikit-learn 
 - **Evaluation Metrics:**
   - **Accuracy**
   - **Precision**
