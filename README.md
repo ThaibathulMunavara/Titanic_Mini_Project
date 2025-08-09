@@ -83,7 +83,7 @@ The techniques used in this project simulate real-world classification tasks suc
 
 ├── data/ # Dataset (Titanic-Dataset.csv)
 
-├── notebooks/ # Jupyter notebooks for EDA & modeling
+├── EDA.ipynb/ # Jupyter notebooks for EDA & modeling
 
 ├── titanic.ipynb # Main script for model training
 
